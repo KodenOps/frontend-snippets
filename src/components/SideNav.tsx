@@ -33,7 +33,7 @@ const SideNav = () => {
 				{menuactive ? (
 					''
 				) : (
-					<div className='mainmobilelist px-4 mt-[82px] min-h-[85vh] fixed z-50 bg-white w-full flex flex-col justify-between'>
+					<div className='mainmobilelist px-4 mt-[82px] min-h-[75vh] fixed z-50 bg-white w-full flex flex-col justify-between'>
 						<div className='tops'>
 							<p className='text-xl mt-2 mb-4'>
 								A collection of all your cool frontend components
