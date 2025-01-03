@@ -21,7 +21,7 @@ const SideNav = () => {
 			{/* Mobile view nav */}
 			<div className='mobiles md:hidden w-full z-50 overflow-scroll'>
 				{/* the logo + menu icon */}
-				<div className='topNav border-b-2 flex px-4 pt-8 pb-4 top-0  w-full justify-between fixed bg-white '>
+				<div className='topNav border-b-2 flex px-4 py-4 top-0  w-full justify-between fixed bg-white '>
 					<h3 className='font-black text-xl uppercase tracking-wide  text-[#2d32a2]'>
 						Snypett
 					</h3>
@@ -48,7 +48,7 @@ const SideNav = () => {
 				)}
 			</div>
 			{/* Web View Nav */}
-			<div className='navside h-screen w-[24%] md:flex justify-center items-center hidden'>
+			<div className='navside h-screen w-full md:flex justify-center items-center hidden'>
 				<div className='navbar h-[90%]  w-[80%] border-2 rounded-lg px-[16px] py-[40px] flex flex-col justify-between'>
 					<div className='top'>
 						{/* logo */}

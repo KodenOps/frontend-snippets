@@ -27,7 +27,7 @@ const BottomNavLink = () => {
 						<p className='font-medium text-slate-600'>LinkedIn</p>
 					</Link>
 				</div>
-				<div className='right flex flex-col gap-4'>
+				<div className='right flex flex-col gap-6'>
 					<Link
 						href={'/snippet-list'}
 						className='flex items-center justify-start gap-2'>
