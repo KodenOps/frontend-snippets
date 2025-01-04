@@ -10,7 +10,7 @@ const BottomNavLink = () => {
 			<h3 className='mt-10 font-medium tracking-wider text-[#594ba6]'>
 				QUICK LINKS - CONTACTS
 			</h3>
-			<div className='flex items-start md:gap-8 gap-16 mt-4'>
+			<div className='flex items-start md:gap-4 lg:gap-8 gap-16 mt-4 flex-wrap'>
 				<div className='left flex flex-col gap-6'>
 					<Link
 						href={'/repo'}

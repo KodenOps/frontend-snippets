@@ -17,11 +17,11 @@ import BottomNavLink from './BottomNavLink';
 const SideNav = () => {
 	const [menuactive, setmenuactive] = useState(true);
 	return (
-		<div className='w-full'>
+		<div className='w-full md:h-auto  bg-[#dcdcdc09]'>
 			{/* Mobile view nav */}
-			<div className='mobiles md:hidden w-full z-50 overflow-scroll'>
+			<div className='mobiles md:hidden w-full z-100 overflow-scroll'>
 				{/* the logo + menu icon */}
-				<div className='topNav border-b-2 flex px-4 py-4 top-0  w-full justify-between fixed bg-white items-center'>
+				<div className='topNav border-b-2 flex px-4 py-4 top-0  w-full justify-between fixed z-[1000] bg-white items-center'>
 					<h3 className='font-black text-xl uppercase tracking-wide  text-[#2d32a2]'>
 						Snypett
 					</h3>
@@ -40,13 +40,16 @@ const SideNav = () => {
 				{menuactive ? (
 					''
 				) : (
-					<div className='mainmobilelist px-4 mt-[82px] min-h-[75vh] fixed z-50 bg-white w-full flex flex-col justify-between'>
+					<div className='mainmobilelist px-4 mt-[60px] min-h-[95vh] fixed z-50 bg-white w-full flex flex-col justify-start gap-[150px]'>
 						<div className='tops'>
-							<p className='text-xl mt-2 mb-4'>
+							<p className='text-xl md:pt-2 pt-6 mb-4'>
 								A collection of all your cool frontend components
 							</p>
 							<hr />
-							<NavLinksCat />
+							<NavLinksCat
+								menuactive={menuactive}
+								setmenuactive={setmenuactive}
+							/>
 						</div>
 						<div className='bottoms'>
 							<BottomNavLink />
@@ -62,12 +65,15 @@ const SideNav = () => {
 						<h3 className='font-black text-2xl uppercase tracking-widest text-[#2d32a2]'>
 							Snypett
 						</h3>
-						<p className='text-lg font-normal'>
+						<p className='lg:text-lg md:text-[16px] font-normal'>
 							A collection of all your cool frontend components
 						</p>
 						<hr className='mt-4' />
 						{/* nav link */}
-						<NavLinksCat />
+						<NavLinksCat
+							menuactive={menuactive}
+							setmenuactive={setmenuactive}
+						/>
 					</div>
 					{/* QUICK LINKS */}
 					<BottomNavLink />

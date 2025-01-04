@@ -8,9 +8,9 @@ type FormSnippet = {
 export const formSnippets: FormSnippet[] = [
 	{
 		id: 1,
-		title: 'Animated Submit Button',
+		title: 'input + search from list',
 		level: 'Intermediate',
-		link: '/animated-submit-button',
+		link: '/search-from-list',
 	},
 	{
 		id: 2,
