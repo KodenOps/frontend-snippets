@@ -23,7 +23,7 @@ export default function Home() {
 						</h3>
 					</div>
 					<Link
-						href={'/snippet-list'}
+						href={'/form-snippets'}
 						className='shadow-md py-4 px-6 w-[240px] mt-4 rounded-md bg-slate-50 text-center'>
 						View Snippets
 					</Link>

@@ -17,7 +17,7 @@ const NavLinksCat = () => {
 			<div className='flex items-start md:gap-8 gap-16 mt-4'>
 				<div className='left flex flex-col gap-4'>
 					<Link
-						href={'/forms'}
+						href={'/form-snippets'}
 						className='flex items-center justify-start gap-2'>
 						<FaWpforms size={20} />
 

@@ -21,12 +21,19 @@ const SideNav = () => {
 			{/* Mobile view nav */}
 			<div className='mobiles md:hidden w-full z-50 overflow-scroll'>
 				{/* the logo + menu icon */}
-				<div className='topNav border-b-2 flex px-4 py-4 top-0  w-full justify-between fixed bg-white '>
+				<div className='topNav border-b-2 flex px-4 py-4 top-0  w-full justify-between fixed bg-white items-center'>
 					<h3 className='font-black text-xl uppercase tracking-wide  text-[#2d32a2]'>
 						Snypett
 					</h3>
 					<div onClick={() => setmenuactive(!menuactive)}>
-						{menuactive ? <MdMenu size={32} /> : <CgClose size={32} />}
+						{menuactive ? (
+							<MdMenu size={32} />
+						) : (
+							<CgClose
+								size={32}
+								color='#ff0000'
+							/>
+						)}
 					</div>
 				</div>
 				{/* main navlist for mobile */}
