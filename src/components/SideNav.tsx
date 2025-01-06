@@ -58,7 +58,7 @@ const SideNav = () => {
 				)}
 			</div>
 			{/* Web View Nav */}
-			<div className='navside h-screen w-full md:flex justify-center items-center hidden'>
+			<div className='navside h-screen w-full md:flex justify-center items-center hidden '>
 				<div className='navbar h-[90%]  w-[80%] border-2 rounded-lg px-[16px] py-[40px] flex flex-col justify-between'>
 					<div className='top'>
 						{/* logo */}

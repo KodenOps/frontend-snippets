@@ -20,9 +20,15 @@ const page = () => {
 				</div>
 
 				<div className='maincontent flex lg:flex-row flex-col items-start gap4 justify-between flex-wrap'>
-					<div className='left mt-4 w-full flex-1 bg-red-300'>Hello</div>
+					<div className='left mt-4 w-full flex-1 border-r-2 border-dotted min-h-[100vh]'>
+						Hello
+					</div>
 					<div className='right w-full flex-1  px-4'>
 						<Bankform />
+						<hr />
+						<button className='bg-black py-2 px-6 w-full rounded-md text-white mt-4'>
+							Click to Copy
+						</button>
 					</div>
 				</div>
 			</div>

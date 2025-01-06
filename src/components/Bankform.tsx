@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { nigerianBanks } from '@/data/BanksList';
+import Link from 'next/link';
 const Bankform = () => {
 	const [isTyping, setisTyping] = useState(false);
 	const [values, setvalues] = useState('');
@@ -12,7 +13,7 @@ const Bankform = () => {
 	);
 	return (
 		<div>
-			<form className='md:w-2/3 w-full border-2 p-4 mt-4'>
+			<form className='  w-full border-2 p-4 mt-4'>
 				<input
 					type='text'
 					placeholder='Enter Bank name'
@@ -43,9 +44,11 @@ const Bankform = () => {
 						)}
 					</ul>
 				)}
-				<button className='bg-blue-600 py-2 px-6 w-full rounded-md text-white'>
+				<Link
+					className='bg-blue-600 py-2 px-6 w-full rounded-md text-white'
+					href={'#'}>
 					Submit
-				</button>
+				</Link>
 			</form>
 		</div>
 	);

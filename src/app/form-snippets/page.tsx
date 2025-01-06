@@ -9,7 +9,7 @@ import Headers from '@/components/Headers';
 const SnippetList = () => {
 	return (
 		<div className='md:flex w-full'>
-			<div className=''>
+			<div className='w-[40%]'>
 				<SideNav />
 			</div>
 			<div className='md:mt-[40px] mt-[60px] md:w-full mr-2 px-4 py-8 md:border-t-2'>
